@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5;
+    flex-direction: column;
+    display: flex;
+}
+header{
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.25rem;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 0 0 lightgray;
+    span{
+        font-size: 0.9rem;
+    }
+    a:nth-of-type(1){
+        margin-left: 0.8rem;
+    }
+    a:nth-of-type(2){
+        margin-right: 0.6rem;
+    }    
+}
+input::-webkit-input-placeholder{
+    font-size: 0.6rem;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0.7rem;
+    .f{
+        position: relative;
+        height: 2.5rem;
+        width: 100%;
+        box-shadow: 0 2px 0 0 lightgray;
+        background: white;
+        font-size: 0.6rem;
+        margin-bottom: 0.7rem;
+        line-height: 2.51rem;
+        .nn{
+            position: absolute;
+            right: 0.5rem;
+            margin-top: 0.3rem;
+        }
+        #left{
+            display: block;
+            float: left;
+            padding-left: 0.4rem;
+            padding-right: 0.3rem;
+            border-right: 1px solid lightgray;
+        }
+        input{
+            width: 12rem;
+            height: 100%;
+            float: left;
+            padding: 0 0.5rem;
+        }
+        .inp{
+            font-size: 0.6rem;
+            color: #A9A9A9;
+        }
+    }
+    .f:nth-of-type(3){
+        #yz{
+            width: 45%;
+            height: 100%;
+            float: left;
+            padding: 0 0.5rem;
+        }
+        .f-hq{
+            float: right;
+            height: 100%;
+            width: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            span{
+                color: gray;
+                display: block;
+            }
+            input{
+                font-size: 0.6rem;
+                color: white;
+            }
+        }
+    }
+    .zc{
+        display: flex;
+        justify-content: center;
+        margin-top: 0.9rem;
+        margin-bottom: 0.9rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        input{
+            height: 2.25rem;
+            width: 19.9rem;
+            background: #FF3752;
+            color: white; 
+            border-radius: 5px;
+        }
+    }    
+    .friendlink{
+        .xy{ 
+            display: flex;
+            justify-content: space-between;
+            width: 19.9rem;
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+            span{
+                color: #AFAAAB;
+                font-size: 0.6rem;
+                a{
+                   font-size: 0.6rem; 
+                   color: #6A6A6A;
+                   font-weight: 500;
+                }
+            }
+        }
+        .di{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+            margin-top: 1.6rem;
+            margin-bottom: 1.3rem;
+            span:nth-of-type(1){
+                border-bottom: 1px solid lightgray;
+                height: 1px;
+                display: block;
+                width: 6rem;
+            }
+            span:nth-of-type(2){
+                display: block;
+                font-size: 0.7rem;
+            }
+            span:nth-of-type(3){
+                border-bottom: 1px solid lightgray;
+                height: 1px;
+                display: block;
+                width: 6rem;
+            }                        
+        }
+        .qw{
+            display: flex;
+            justify-content: center;
+            a{
+                display: block;
+                width: 1.9rem;
+                height: 1.9rem;      
+                img{
+                    width: 100%;
+                    height: 100%;
+                }                          
+            }
+        }
+    }    
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.8rem;
+    z-index: 20;
+    background: #FFFFFF;
+    padding-top: 0.4rem;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        height: 2.8rem;
+        width: 100%;
+        li{
+            text-align: center;
+            width: 20%;
+
+            &:last-child{
+                border: none;
+            }
+            img{
+                height: 1.1rem;
+                width: 1.1rem;
+            }
+            p{
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
